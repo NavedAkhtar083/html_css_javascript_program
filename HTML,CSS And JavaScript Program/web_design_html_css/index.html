@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:url("images/hello.jpg.jpg") center no-repeat;
+            height:100vh;
+            background-size: cover;
+        }
+
+        .manudropdown{
+            width: 80%;
+            height: 100px;
+            margin:0px auto;
+        }
+        .manudropdown ul{
+            padding: 0px;
+        }
+
+        .manudropdown ul li{
+            float:left;
+            background-color: black;
+            color: white;
+            width: 200px;
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0.7;
+        }
+        .manudropdown ul li ul{
+            display: none;
+        }
+        .manudropdown ul li:hover > ul{
+            display: block;
+        }
+        .manudropdown ul li:hover{
+            background-color: aqua;
+            opacity: 0.9;
+        }
+        .manudropdown ul li ul li{
+            position: relative;
+        }
+        .manudropdown ul li ul li ul{
+            position: relative;
+            left: 200px;
+            top:0px;
+        }
+    </style>
+</head>
+
+    <div class="manudropdown">
+        <ul>
+            <li>USA
+                <ul>
+                    <li>New York</li>
+                </ul>
+            </li>
+            <li>India
+                <ul>
+                    <li>Pune</li>
+                    <li>Mumbai</li>
+                    <li>Banglore</li>
+                    <li>Deharadun</li>
+                    <li>Delhi
+                        <ul>
+                            <li>kutub Minar</li>
+                            <li>Red Fort</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>France</li>
+            <li>Austrlia</li>
+            <li>Brazil</li>
+        </ul>
+    </div>
+</body>
+</html>
